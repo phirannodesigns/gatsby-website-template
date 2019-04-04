@@ -1,0 +1,10 @@
+.image-container {
+  @apply absolute;
+  @apply h-full;
+  @apply w-full;
+}
+
+.image-container > .gatsby-image-wrapper {
+  @apply h-full;
+  @apply w-full;
+}
