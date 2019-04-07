@@ -6,9 +6,9 @@ module.exports = {
     email: `hello@phirannodesigns.com.au`, // used in GraphQL queries so address only needs to be entered in one place
     phone: `+61400000000`, // e.g. +61400000000
     phoneFormatted: `0400 000 000`, // e.g. 0400 000 000
-    siteUrl: ``, // used for `gatsby-plugin-sitemap` to generate correct URLs
-    author: ``, // e.g. @phirannodesignss — used for twitter cards in SEO component
-    facebook: `https://www.facebook.com/phirannodesigns/`, // e.g. https://www.facebook.com/dentdoctorsmash/ — used in GraphQL queries so address only needs to be entered in one place
+    siteUrl: `https://www.phirannodesigns.com.au`, // used for `gatsby-plugin-sitemap` to generate correct URLs
+    author: ``, // e.g. @phirannodesigns — used for twitter cards in SEO component
+    facebook: `https://www.facebook.com/phirannodesigns`, // e.g. https://www.facebook.com/phirannodesigns — used in GraphQL queries so address only needs to be entered in one place
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,10 +30,10 @@ module.exports = {
         background_color: `#3E8D90`,
         theme_color: `#3E8D90`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo-dark.jpg`, // This path is relative to the root of the site.
       },
     },
-    // `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,

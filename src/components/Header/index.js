@@ -1,6 +1,12 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
+
+const handleClick = e => {
+  e.preventDefault();
+  const element = document.getElementById('nav');
+  element.classList.toggle('block');
+  element.classList.toggle('hidden');
+};
 
 const Header = () => (
   <StaticQuery
@@ -9,56 +15,69 @@ const Header = () => (
         site {
           siteMetadata {
             title
-            email
-            phone
-            phoneFormatted
           }
         }
       }
     `}
     render={data => (
-      <>
-        {/* <div>
-          <div className="bg-white flex items-center justify-between max-w-6xl mx-auto px-4 py-2">
-            <a href={`tel:${data.site.siteMetadata.phone}`}>
-              {data.site.siteMetadata.phoneFormatted}
-            </a>
-            <a href={`mailto:${data.site.siteMetadata.email}`}>
-              {data.site.siteMetadata.email}
-            </a>
-          </div>
+      <header className="md:flex items-center leading-none relative w-full">
+        {/* Uncomment this section if you want to use a background image
+        <div className="image-container opacity-75 relative">
+          <Image />
         </div> */}
-        <header className="bg-white flex flex-wrap h-24 items-center justify-between leading-none max-w-6xl mx-auto p-4 relative sticky top-0 w-full z-10">
-          <div className="text-center w-full sm:w-auto">
-            <h1 className="m-0">
-              <Link className="hover:no-underline text-3xl" to="/">
-                {data.site.siteMetadata.title}{' '}
-              </Link>
-            </h1>
+        <div className="relative">
+          <div className="flex justify-between w-full">
+            <Link
+              to="/"
+              className="flex font-bold items-center no-underline px-4 text-lg tracking-tight"
+            >
+              {data.site.siteMetadata.title}
+              {/* Uncomment this section if you want to use a logo instead of text
+              <img
+                className="h-12 py-2"
+                src={Logo}
+                alt={data.site.siteMetadata.title}
+              /> */}
+            </Link>
+
+            <button
+              className="flex md:hidden items-center justify-center p-4"
+              onClick={handleClick}
+              type="button"
+            >
+              <svg
+                className="fill-current h-4 w-4"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
           </div>
-          <nav className="flex flex-1 justify-center sm:justify-end pt-4 sm:p-0">
-            <NavLink link="/#about" title="About" />
-            <NavLink link="/#services" title="Services" />
-            <NavLink link="/#contact" title="Contact" />
-          </nav>
-        </header>
-      </>
+        </div>
+        <nav
+          id="nav"
+          className="hidden md:flex md:flex-1 md:items-center md:justify-end relative w-full md:w-auto"
+        >
+          <NavLink link="/#about" title="About&nbsp;Us" />
+          <span className="hidden md:block text-gray-300">|</span>
+          <NavLink link="/#services" title="Services" />
+          <span className="hidden md:block text-gray-300">|</span>
+          <NavLink link="/#contact" title="Contact" />
+        </nav>
+      </header>
     )}
   />
 );
 
 const NavLink = props => (
-  <a href={props.link} className="ml-4">
+  <Link
+    to={props.link}
+    className="block border-t md:border-none font-semibold p-4 hover:text-gray-800 text-sm tracking-wide uppercase"
+  >
     {props.title}
-  </a>
+  </Link>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: ``,
-};
 
 export default Header;

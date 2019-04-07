@@ -17,7 +17,7 @@ const Social = () => (
       }
     `}
     render={data => (
-      <div className="max-w-6xl mx-auto w-full">
+      <div className="max-w-1920 mx-auto w-full">
         <div className="flex items-center justify-center max-w-xs mx-auto pt-12 w-full">
           <a
             href={data.site.siteMetadata.facebook}

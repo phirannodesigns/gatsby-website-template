@@ -14,7 +14,7 @@ const Contact = () => (
     </div>
     <div className="flex items-center justify-center w-full md:w-1/2">
       <div className="max-w-md px-4 py-24 w-full">
-        <h2 className="leading-none m-0 pt-2 text-4xl">Contact</h2>
+        <h2 className="font-bold mb-4 text-4xl text-gray-800">Contact</h2>
         <p>
           Send us a photo and we will do a quote for you without the need to
           bring your car in!

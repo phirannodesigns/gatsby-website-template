@@ -12,7 +12,7 @@ const About = () => (
     </div>
     <div className="flex items-center justify-center w-full md:w-1/2">
       <div className="max-w-md px-4 py-24 w-full">
-        <h2 className="leading-none m-0 pt-2 text-4xl">About</h2>
+        <h2 className="font-bold mb-4 text-4xl text-gray-800">About</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
           facilis ipsa temporibus odio expedita delectus dolor optio, natus,
