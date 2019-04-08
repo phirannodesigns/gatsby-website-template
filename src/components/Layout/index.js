@@ -6,7 +6,6 @@ import Footer from '../Footer';
 import '../../css/tailwind.css';
 import '../../css/typography.css';
 import '../../css/global.css';
-import '../../css/markdown.css';
 
 const Layout = ({ children }) => (
   <div className="body antialiased flex flex-col leading-relaxed min-h-screen overflow-hidden text-gray-700 w-full">
