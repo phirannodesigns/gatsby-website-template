@@ -11,7 +11,7 @@ const handleClick = e => {
 const Header = () => (
   <StaticQuery
     query={graphql`
-      query ContactQuery {
+      query HeaderQuery {
         site {
           siteMetadata {
             title
