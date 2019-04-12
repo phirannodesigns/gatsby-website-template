@@ -38,4 +38,8 @@ If you have the GitHub desktop app installed you can use the **Open in Desktop**
 
 Open the repository in Visual Studio Code and run `npm install` from inside this directory to install all of the required node packages.
 
+To set up Slack notifications for builds that fail, go to Settings > Build & deploy > Deploy notifications > Add notification > Slack integration.
+
+Under **Event to listen for** select **Deploy failed** and under **Slack Incoming Webhook URL** copy and paste the webhook URL (saved in Slackbot).
+
 To spin up a development server, type `npm run start` and start working on the site.
