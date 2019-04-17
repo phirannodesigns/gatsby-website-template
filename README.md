@@ -12,7 +12,7 @@ Hosting, DNS and form handling are all done with Netlify.
 
 To start with, open a private browsing tab and clone a copy of the repository and deploy it to Netlify using the following link:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/phirannodesigns/gatsby-template)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/phirannodesigns/gatsby-website-template)
 
 You will be prompted to log into GitHub, use the Phiranno Designs account.
 
