@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const handleClick = e => {
   e.preventDefault();
@@ -20,7 +21,7 @@ const Header = () => (
       }
     `}
     render={data => (
-      <header className="md:flex items-center leading-none relative w-full">
+      <header className="bg-white md:flex items-center leading-none relative shadow sticky top-0 w-full z-50">
         {/* Uncomment this section if you want to use a background image
         <div className="image-container opacity-75 relative">
           <Image />
@@ -60,11 +61,11 @@ const Header = () => (
           id="nav"
           className="hidden md:flex md:flex-1 md:items-center md:justify-end relative w-full md:w-auto"
         >
-          <NavLink link="/#about" title="About&nbsp;Us" />
+          <NavLink link="#about" title="About&nbsp;Us" />
           <span className="hidden md:block text-gray-300">|</span>
-          <NavLink link="/#services" title="Services" />
+          <NavLink link="#services" title="Services" />
           <span className="hidden md:block text-gray-300">|</span>
-          <NavLink link="/#contact" title="Contact" />
+          <NavLink link="#contact" title="Contact" />
         </nav>
       </header>
     )}
@@ -72,12 +73,12 @@ const Header = () => (
 );
 
 const NavLink = props => (
-  <Link
-    to={props.link}
+  <AnchorLink
+    href={props.link}
     className="block border-t md:border-none font-semibold p-4 hover:text-gray-800 text-sm tracking-wide uppercase"
   >
     {props.title}
-  </Link>
+  </AnchorLink>
 );
 
 export default Header;
