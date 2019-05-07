@@ -15,7 +15,7 @@ const Footer = () => (
       }
     `}
     render={data => (
-      <footer className="max-w-1920 mx-auto w-full">
+      <footer className="mx-auto w-full">
         <Social />
         <p className="flex flex-wrap items-center justify-center mb-0 p-4 text-center w-full">
           <span className="flex-no-shrink w-full md:w-auto">

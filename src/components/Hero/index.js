@@ -20,7 +20,7 @@ const Hero = () => (
       }
     `}
     render={data => (
-      <div className="flex items-center max-w-1920 mx-auto overflow-hidden relative w-full">
+      <div className="flex items-center mx-auto overflow-hidden relative w-full">
         <div className="image-container">
           <Image />
         </div>
