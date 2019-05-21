@@ -7,7 +7,7 @@ const Gallery = () => (
     query={graphql`
       fragment galleryFluidImage on File {
         childImageSharp {
-          fluid(maxWidth: 256) {
+          fluid(maxWidth: 382) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
