@@ -2,13 +2,11 @@
 
 .image-container {
   @apply absolute;
-  @apply h-full;
-  @apply w-full;
+  @apply inset-0;
 }
 
 .image-container > .gatsby-image-wrapper {
   @apply h-full;
-  @apply w-full;
 }
 
 .full-bleed {

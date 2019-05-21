@@ -20,11 +20,9 @@ const Services = () => (
         </p>
       </div>
     </div>
-    <div className="flex h-64 md:h-auto overflow-hidden w-full md:w-1/2">
-      <div className="h-full w-full relative">
-        <div className="image-container">
-          <Image />
-        </div>
+    <div className="flex h-64 md:h-auto overflow-hidden relative w-full md:w-1/2">
+      <div className="image-container">
+        <Image />
       </div>
     </div>
   </div>

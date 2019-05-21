@@ -3,11 +3,9 @@ import Image from './Image';
 
 const About = () => (
   <div id="about" className="flex flex-wrap-reverse">
-    <div className="flex h-64 md:h-auto overflow-hidden w-full md:w-1/2">
-      <div className="h-full w-full relative">
-        <div className="image-container">
-          <Image />
-        </div>
+    <div className="relative w-full md:w-1/2">
+      <div className="image-container">
+        <Image />
       </div>
     </div>
     <div className="flex items-center justify-center w-full md:w-1/2">
