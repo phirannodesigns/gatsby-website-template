@@ -1,12 +1,13 @@
 /* Component classes */
 
 .image-container {
+  /*
+  ** Make sure to add style={{ height: `100%` }}
+  ** to the corresponding image component
+  */
   @apply absolute;
   @apply inset-0;
-}
-
-.image-container > .gatsby-image-wrapper {
-  @apply h-full;
+  @apply overflow-hidden;
 }
 
 .full-bleed {
