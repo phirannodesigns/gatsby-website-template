@@ -1,5 +1,7 @@
 # Phiranno Designs Gatsby Website Template
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/21f7d687-3a8c-4f65-a4eb-8f90399a8990/deploy-status)](https://app.netlify.com/sites/gatsby-website-template/deploys)
+
 This is a template to build a simple Gatsby website.
 
 All the images are served using the [Gatsby Image](https://www.gatsbyjs.org/packages/gatsby-image/) and styling is done with Tailwind.
