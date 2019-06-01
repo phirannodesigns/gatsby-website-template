@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
+import PropTypes from 'prop-types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const handleClick = e => {
@@ -72,13 +73,18 @@ const Header = () => (
   />
 );
 
-const NavLink = props => (
+const NavLink = ({ link, title }) => (
   <AnchorLink
-    href={props.link}
+    href={link}
     className="block border-t md:border-none font-semibold p-4 hover:text-gray-800 text-sm tracking-wide uppercase"
   >
-    {props.title}
+    {title}
   </AnchorLink>
 );
+
+NavLink.propTypes = {
+  link: PropTypes.string,
+  title: PropTypes.string,
+};
 
 export default Header;

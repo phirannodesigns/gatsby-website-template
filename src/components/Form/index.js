@@ -35,20 +35,24 @@ export default class ContactForm extends React.Component {
   render() {
     return (
       <form
-        data-netlify-honeypot="bot-field"
-        data-netlify="true"
-        onSubmit={this.handleSubmit}
         action="/success/"
         className="w-full"
+        data-netlify-honeypot="bot-field"
+        data-netlify="true"
         method="post"
         name="contact"
+        onSubmit={this.handleSubmit}
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="contact" />
+        <input name="form-name" type="hidden" value="contact" />
         <div hidden>
-          <label>
+          <label htmlFor="bot-field">
             Don’t fill this out:{' '}
-            <input name="bot-field" onChange={this.handleChange} />
+            <input
+              id="bot-field"
+              name="bot-field"
+              onChange={this.handleChange}
+            />
           </label>
         </div>
 
