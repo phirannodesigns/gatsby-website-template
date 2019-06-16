@@ -8,17 +8,17 @@ import About from '../components/About';
 import Services from '../components/Services';
 import Gallery from '../components/Gallery';
 import Contact from '../components/Contact';
-import Location from '../components/Location';
+import Map from '../components/Map';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" />
     <Hero />
     <About />
     <Services />
     <Gallery />
     <Contact />
-    <Location />
+    <Map />
   </Layout>
 );
 

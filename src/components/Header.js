@@ -23,10 +23,6 @@ const Header = () => (
     `}
     render={data => (
       <header className="bg-white md:flex items-center leading-none relative shadow sticky top-0 w-full z-50">
-        {/* Uncomment this section if you want to use a background image
-        <div className="image-container opacity-75 relative">
-          <Image />
-        </div> */}
         <div className="relative">
           <div className="flex justify-between w-full">
             <Link
@@ -34,12 +30,6 @@ const Header = () => (
               className="flex font-bold items-center no-underline px-4 text-lg tracking-tight"
             >
               {data.site.siteMetadata.title}
-              {/* Uncomment this section if you want to use a logo instead of text
-              <img
-                className="h-12 py-2"
-                src={Logo}
-                alt={data.site.siteMetadata.title}
-              /> */}
             </Link>
 
             <button
@@ -65,6 +55,8 @@ const Header = () => (
           <NavLink link="#about" title="About&nbsp;Us" />
           <span className="hidden md:block text-gray-300">|</span>
           <NavLink link="#services" title="Services" />
+          <span className="hidden md:block text-gray-300">|</span>
+          <NavLink link="#gallery" title="Gallery" />
           <span className="hidden md:block text-gray-300">|</span>
           <NavLink link="#contact" title="Contact" />
         </nav>

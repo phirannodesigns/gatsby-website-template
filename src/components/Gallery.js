@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import Image from 'gatsby-image';
 
 const Gallery = () => (
   <StaticQuery
@@ -37,24 +37,26 @@ const Gallery = () => (
             </p>
           </div>
         </div>
-        <div className="flex justify-around mb-32 w-full">
-          <div>
-            <Img
-              className="h-24 sm:h-48 mx-auto overflow-hidden rounded-full w-24 sm:w-48"
-              fluid={data.about.childImageSharp.fluid}
-            />
-          </div>
-          <div>
-            <Img
-              className="h-24 sm:h-48 mx-auto overflow-hidden rounded-full w-24 sm:w-48"
-              fluid={data.services.childImageSharp.fluid}
-            />
-          </div>
-          <div>
-            <Img
-              className="h-24 sm:h-48 mx-auto overflow-hidden rounded-full w-24 sm:w-48"
-              fluid={data.contact.childImageSharp.fluid}
-            />
+        <div className="flex justify-center w-full">
+          <div className="flex max-w-3xl mb-32 -mx-4 overflow-x-auto w-full">
+            <div className="px-4">
+              <Image
+                className="h-48 overflow-hidden rounded-full w-48"
+                fluid={data.about.childImageSharp.fluid}
+              />
+            </div>
+            <div className="px-4">
+              <Image
+                className="h-48 overflow-hidden rounded-full w-48"
+                fluid={data.services.childImageSharp.fluid}
+              />
+            </div>
+            <div className="px-4">
+              <Image
+                className="h-48 overflow-hidden rounded-full w-48"
+                fluid={data.contact.childImageSharp.fluid}
+              />
+            </div>
           </div>
         </div>
       </div>

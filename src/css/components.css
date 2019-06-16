@@ -1,15 +1,5 @@
 /* Component classes */
 
-.image-container {
-  /*
-  ** Make sure to add style={{ height: `100%` }}
-  ** to the corresponding image component
-  */
-  @apply absolute;
-  @apply inset-0;
-  @apply overflow-hidden;
-}
-
 .full-bleed {
   width: 100vw;
   margin-left: 50%;
