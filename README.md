@@ -1,6 +1,14 @@
-# Phiranno Designs Gatsby Website Template
+<h1 align="center">Welcome to gatsby-site-template 👋</h1>
+<p>
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://twitter.com/luke_bennett_">
+    <img alt="Twitter: luke_bennett_" src="https://img.shields.io/twitter/follow/luke_bennett_.svg?style=social" target="_blank" />
+  </a>
+</p>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/21f7d687-3a8c-4f65-a4eb-8f90399a8990/deploy-status)](https://app.netlify.com/sites/gatsby-website-template/deploys)
+
+> Gatsby Starter for Phiranno Designs
 
 This is a template to build a simple Gatsby website.
 
@@ -12,36 +20,36 @@ Hosting, DNS and form handling are all done with Netlify.
 
 ## Getting started
 
-To start with, open a private browsing tab and clone a copy of the repository and deploy it to Netlify using the following link:
+To create a new website for Phiranno Designs, head to <https://github.com/new/import>, under **Your old repository’s clone URL** enter:
+`https://github.com/phirannodesigns/gatsby-website-template**` and select **phirannodesigns** as the owner.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/phirannodesigns/gatsby-website-template)
+Clone the newly created site into your working directory
 
-You will be prompted to log into GitHub, use the Phiranno Designs account.
+```sh
+$ cd $WORKING_DIRECTORY
+$ git clone git@github.com:phirannodesigns/$NAME_OF_REPO.git
+$ cd $NAME_OF_REPO
+$ npm install
+$ npm start
+```
 
-Give the repository a new name, I usually make this the domain name for the website (e.g. `phirannodesigns.com.au`) and select **Save & Deploy**.
+### Deploying to Netlify
 
-The site will immediately start to build.
+To deploy the website head over to <https://app.netlify.com/start/phirannodesigns/repos> and select the appropriate repo.
 
-Click the **Site Settings** button, scroll down to the **Change site name** and give the site a name that you will be able to remember, I usually make this a hyphenated version of the company name (e.g. `phiranno-designs`).
-
-Scroll down to the deploy status badge section and copy the markdown link and paste in into the top of this README document.
-
-At the top of the page there will be a link just under the navigation menu that says **Deploys from GitHub** click on this to go to the GitHub repository.
-
-If the site hasn't finished it's initial build the repository may be still empty, if this is the case, once it has finished building refresh the page and everything should be there.
-
-Transfer ownership to Phiranno Designs by going to GitHub, and from the repository that you just created, go to `Settings > Danger Zone` and select the **Transfer** button.
-
-Type the name of the repository to confirm and then enter `phirannodesigns` under **New owner’s GitHub username or organization name**.
-
-Go back to the **Code** tab of the repository and click on the green button that says **Clone or download**.
-
-If you have the GitHub desktop app installed you can use the **Open in Desktop** button to clone the repo into your working directory. You can also use do this from your terminal, `cd` into your working directory and type the following command: `git clone https://github.com/phirannodesigns/gatsby-template.git`.
-
-Open the repository in Visual Studio Code and run `npm install` from inside this directory to install all of the required node packages.
+### Slack notifications for failed builds
 
 To set up Slack notifications for builds that fail, go to Settings > Build & deploy > Deploy notifications > Add notification > Slack integration.
 
 Under **Event to listen for** select **Deploy failed** and under **Slack Incoming Webhook URL** copy and paste the webhook URL (saved in Slackbot).
 
-To spin up a development server, type `npm run start` and start working on the site.
+## Author
+
+👤 **Luke Bennett &lt;hello@lukebennett.com.au&gt;**
+
+* Twitter: [@luke_bennett_](https://twitter.com/luke_bennett_)
+* Github: [@lukebennett88](https://github.com/lukebennett88)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
