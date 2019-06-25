@@ -3,13 +3,6 @@ import { graphql, Link, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-const handleClick = e => {
-  e.preventDefault();
-  const element = document.getElementById('nav');
-  element.classList.toggle('block');
-  element.classList.toggle('hidden');
-};
-
 const Header = () => (
   <StaticQuery
     query={graphql`
@@ -23,30 +16,31 @@ const Header = () => (
     `}
     render={data => (
       <header className="bg-white md:flex items-center leading-none relative shadow sticky top-0 w-full z-50">
-        <div className="relative">
-          <div className="flex justify-between w-full">
-            <Link
-              to="/"
-              className="flex font-bold items-center no-underline px-4 text-lg tracking-tight"
-            >
-              {data.site.siteMetadata.title}
-            </Link>
+        <div className="flex justify-between w-full">
+          <Link
+            to="/"
+            className="flex font-bold items-center no-underline px-4 text-lg tracking-tight"
+          >
+            {data.site.siteMetadata.title}
+          </Link>
 
-            <button
-              className="flex md:hidden items-center justify-center p-4"
-              onClick={handleClick}
-              type="button"
+          <button
+            className="flex md:hidden items-center justify-center p-4"
+            onClick={() => {
+              const nav = document.getElementById('nav');
+              nav.classList.toggle('hidden');
+            }}
+            type="button"
+          >
+            <svg
+              className="fill-current h-4 w-4"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                className="fill-current h-4 w-4"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-              </svg>
-            </button>
-          </div>
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
         </div>
         <nav
           id="nav"
