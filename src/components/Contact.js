@@ -10,7 +10,7 @@ const Contact = () => (
       query {
         file(relativePath: { eq: "contact.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 5000) {
+            fluid(maxWidth: 3000, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

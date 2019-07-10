@@ -8,7 +8,7 @@ const Hero = () => (
       query HeroQuery {
         file(relativePath: { eq: "hero.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 5000) {
+            fluid(maxWidth: 3000, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -29,6 +29,7 @@ const Hero = () => (
         <Image
           style={{ height: `66vh` }}
           fluid={data.file.childImageSharp.fluid}
+          loading="eager"
         />
         <div className="absolute flex flex-col inset-0 items-center justify-center p-4 w-full md:w-1/2">
           <div className="max-w-sm mx-auto">

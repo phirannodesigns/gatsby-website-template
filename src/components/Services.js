@@ -8,7 +8,7 @@ const Services = () => (
       query {
         file(relativePath: { eq: "services.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 5000) {
+            fluid(maxWidth: 3000, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
