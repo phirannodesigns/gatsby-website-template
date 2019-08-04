@@ -51,9 +51,10 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "build:serve": "gatsby build && gatsby serve",
+    "build:serve": "npm run && npm run serve",
     "develop": "gatsby develop --open",
-    "lint:fix": "gatsby clean && eslint . --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "serve": "gatsby serve --open",
     "start": "npm run develop"
   }
