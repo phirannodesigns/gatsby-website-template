@@ -1,14 +1,14 @@
 import React from 'react';
 // import { Link } from 'gatsby';
 
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Services from '../components/Services';
-import Gallery from '../components/Gallery';
-import Contact from '../components/Contact';
-import Map from '../components/Map';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Hero from '../components/hero';
+import About from '../components/about';
+import Services from '../components/services';
+import Gallery from '../components/gallery';
+import Contact from '../components/contact';
+import Map from '../components/map';
 
 const IndexPage = () => (
   <Layout>

@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 
-import Form from './Form';
+import Form from './form';
 
 const Contact = () => (
   <StaticQuery
