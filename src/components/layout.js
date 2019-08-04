@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import Navbar from './navbar';
 import Footer from './footer';
 
-import '../css/tailwind.css';
-
 const Layout = ({ children }) => (
   <div className="antialiased flex flex-col leading-relaxed min-h-screen text-gray-700">
     <Navbar />
